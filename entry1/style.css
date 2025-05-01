@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fafafa;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-image {
+  width: 300px;
+  height: 400px;
+  background: url('Irvine.png') no-repeat center/cover;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+  .hover-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 1s ease;
+  }
+  .hover-image:hover {
+    transform: scale(1.05);
+  }
+  .hover-image:hover::after {
+    background: rgba(0, 0, 0, 0.2);
+  }
