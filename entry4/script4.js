@@ -84,6 +84,6 @@ const slides = [
   }
   
   function goHome() {
-    window.location.href = 'file:///Users/jinnykim/Documents/core%202%20studio/Irvine/entry1/index1.html'; // Change this to your home page URL
+    window.location.href = '../entry1/index1.html'; // Change this to your home page URL
   }
   
